@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Basics</title>
+    <style>
+      body {
+        background-color: black;
+        color: rgb(255, 123, 0);
+        font-size: 1.3rem;
+      }
+      li {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Javascript Events</h1>
+    <div id="name">
+        <h3>Mahadev Names</h3>
+        <p>Har Har Mahadev</p>
+        <ul id="shivname">
+            <!-- Method 1 -->
+            <li id="Ashutosh" >Ashutosh</li>
+            
+            <li id="Shankar">Shankar</li>
+            
+            <li id="Neelkanth">Neelkanth</li>
+            
+            <li id="Adishankar">Adishankar</li>
+          
+            <li id="Kaalbhairav">Kaalbhairav</li>
+            
+            <!-- <li><a href="https://google.com" id="google" >Google</a></li> -->
+          </ul>
+    </div>
+    
+
+    <script>
+        // after clickingon each item in the list it shoud delete from html page
+        document.querySelector('#name').addEventListener('click',(e)=>{
+           // console.log(e.target);
+           //let item=e.target.parentNode
+           let item=e.target
+           item.remove()
+        },false)
+
+        
+    </script>
+  </body>
+</html>

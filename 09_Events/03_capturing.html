@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Basics</title>
+    <style>
+      body {
+        background-color: black;
+        color: rgb(255, 123, 0);
+        font-size: 1.3rem;
+      }
+      li {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Javascript Events</h1>
+    <div id="name">
+        <h3>Mahadev Names</h3>
+        <p>Har Har Mahadev</p>
+        <ul id="shivname">
+            <!-- Method 1 -->
+            <li id="Ashutosh" onclick="alert('Hello Ashutosh')">Ashutosh</li>
+            <br />
+            <li id="Shankar">Shankar</li>
+            <br />
+            <li id="Neelkanth">Neelkanth</li>
+            <br />
+            <li id="Adishankar">Adishankar</li>
+            <br />
+            <li id="Kaalbhairav">Kaalbhairav</li>
+            <br />
+          </ul>
+    </div>
+    
+
+    <script>
+    // default false means event bubbling
+
+        //const Ashutosh=document.getElementById('Ashutosh')
+        //Ashutosh.addEventListener('click',(e)=>{
+        //  console.log(e)
+        //},false)
+
+        const Name=document.getElementById('name')
+        Name.addEventListener('click',(e)=>{
+          console.log("clicked inside name")
+        },true)
+                                                                //Event capturing : tracking top to bottom
+
+        const shivname=document.getElementById('shivname')
+        shivname.addEventListener('click',(e)=>{
+          console.log("clicked inside shivname")
+        },true)
+        // when  i am clicking inside shivname first it will print 'clicked inside name' then it goes downside the code
+        // and then print 'clicked indide the shivname'   
+    </script>
+  </body>
+</html>

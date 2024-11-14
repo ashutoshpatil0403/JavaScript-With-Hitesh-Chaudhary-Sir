@@ -1,0 +1,84 @@
+* {
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.yellow {
+  padding: 16px;
+  font-size: larger;
+  border-radius: 7px;
+  background-color: yellow;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.blue {
+  padding: 16px;
+  font-size: larger;
+  border-radius: 7px;
+  background-color: blue;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.red {
+  padding: 16px;
+  font-size: larger;
+  border-radius: 7px;
+  background-color: red;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.green {
+  padding: 16px;
+  font-size: larger;
+  border-radius: 7px;
+  background-color: green;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.orange {
+  padding: 16px;
+  font-size: larger;
+  border-radius: 7px;
+  background-color: rgb(255, 72, 0);
+  cursor: pointer;
+  opacity: 0.7;
+}
+.gray {
+  padding: 16px;
+  font-size: larger;
+  border-radius: 7px;
+  background-color: gray;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.pink {
+  padding: 16px;
+  font-size: larger;
+  border-radius: 7px;
+  background-color: rgb(233, 0, 182);
+  cursor: pointer;
+  opacity: 0.7;
+}
+.gray:hover {
+  opacity: 1;
+}
+.blue:hover {
+  opacity: 1;
+}
+.green:hover {
+  opacity: 1;
+}
+.orange:hover {
+  opacity: 1;
+}
+.pink:hover {
+  opacity: 1;
+}
+.yellow:hover {
+  opacity: 1;
+}
+.red:hover {
+  opacity: 1;
+}

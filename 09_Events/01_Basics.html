@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Basics</title>
+    <style>
+      body {
+        background-color: black;
+        color: aqua;
+        font-size: 1.3rem;
+      }
+      li {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Javascript Events</h1>
+    <ul>
+      <!-- Method 1 -->
+      <li id="Ashutosh" onclick="alert('Hello Ashutosh')">Ashutosh</li>
+      <br />
+      <li id="Shankar">Shankar</li>
+      <br />
+      <li id="Neelkanth">Neelkanth</li>
+      <br />
+      <li id="Adishankar">Adishankar</li>
+      <br />
+      <li id="Kaalbhairav">Kaalbhairav</li>
+      <br />
+    </ul>
+
+    <script>
+      alert("Welcome in JavaScript...!");
+
+      // Method 2
+
+      const Shankar = document.getElementById("Shankar");
+      Shankar.onclick = function () {
+        alert("Hello Shankar...!");
+      };
+
+      // Method 3
+
+      const Adi = document.getElementById("Adishankar");
+      Adi.addEventListener(
+        "click",
+        () => {
+          alert("Hello Adishankar...!");
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
